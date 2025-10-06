@@ -1,5 +1,12 @@
 from lib.counter import Counter
 
+def test_counter_starts_at_0():
+    counter = Counter()
+
+    result = counter.report()
+
+    assert result == "Counted to 0 so far."
+
 def test_counter_add_1_to_10_times():
     counter = Counter()
 
